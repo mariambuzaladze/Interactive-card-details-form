@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 91px 24px 0;
+  background-color: #fff;
+  margin-top: -53px;
+}
+
+.confirm {
+  border-radius: 8px;
+  background-color: #21092f;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 8px;
+}
+
+.inputs {
+  display: flex;
+  gap: 8px;
+}

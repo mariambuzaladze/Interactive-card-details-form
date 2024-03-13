@@ -4,8 +4,7 @@ import Circle from "/images/card-logo.svg";
 
 export default function Front() {
   return (
-    <>
-      <img className="card-front" src={CardFront} alt="card front" />
+    <div className="front">
       <img className="card-logo" src={Circle} alt="card logo" />
 
       <div className="front-text">
@@ -16,6 +15,6 @@ export default function Front() {
           <p className="card-date">00/00</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

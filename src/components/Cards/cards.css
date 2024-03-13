@@ -1,7 +1,6 @@
 .container {
   background-image: url(/images/bg-main-mobile.png);
   box-shadow: 0 39px 60px 0 rgba(0, 0, 0, 0.14);
-  display: flex;
-  position: relative;
-  height: 240px;
+  display: grid;
+  padding: 16px;
 }
