@@ -1,0 +1,7 @@
+.container {
+  background-color: #21092f;
+  box-shadow: 0 39px 60px 0 rgba(0, 0, 0, 0.14);
+  display: flex;
+  position: relative;
+  height: 240px;
+}

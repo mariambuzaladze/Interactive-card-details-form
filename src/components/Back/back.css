@@ -1,0 +1,16 @@
+.card-back {
+  position: absolute;
+  top: 13%;
+  left: 19%;
+  height: 66%;
+}
+
+.back-text {
+  position: absolute;
+  top: 43%;
+  left: 81%;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 1.29px;
+  color: #fff;
+}
