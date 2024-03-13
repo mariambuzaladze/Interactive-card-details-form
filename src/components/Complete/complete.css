@@ -1,0 +1,41 @@
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  padding: 91px 24px 0;
+  margin-top: -53px;
+  background-color: #fff;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 3.42px;
+  color: #21092f;
+}
+
+.added {
+  font-size: 18px;
+  font-weight: 500;
+  color: #8f8694;
+}
+
+.icon-complete {
+  width: 80px;
+  height: 80px;
+}
+
+@media screen and (min-width: 900px) {
+  .thanks {
+    padding: 127px;
+    gap: 24px;
+  }
+}

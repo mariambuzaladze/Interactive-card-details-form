@@ -1,9 +1,9 @@
 import "./back.css";
 
-export default function Back() {
+export default function Back({ cvc }) {
   return (
     <div className="back">
-      <p className="back-text">000</p>
+      <p className="back-text">{cvc}</p>
     </div>
   );
 }

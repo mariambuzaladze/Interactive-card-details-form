@@ -8,7 +8,7 @@
   margin-top: -53px;
 }
 
-.confirm {
+button {
   border-radius: 8px;
   background-color: #21092f;
   border: none;
@@ -38,7 +38,7 @@
     gap: 24px;
   }
 
-  .confirm {
+  button {
     margin-top: 16px;
   }
 }

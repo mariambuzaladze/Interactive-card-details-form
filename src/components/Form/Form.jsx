@@ -2,53 +2,71 @@ import { useState } from "react";
 import Inputs from "../Inputs/Inputs";
 import "./form.css";
 
-export default function Form() {
-  const [name, setName] = useState("");
-  const [nameError, setNameError] = useState(false);
-  const [number, setNumber] = useState("");
-  const [numberError, setNumberError] = useState(false);
-  const [month, setMonth] = useState("");
-  const [monthError, setMonthError] = useState(false);
-  const [year, setYear] = useState("");
-  const [yearError, setYearError] = useState(false);
-  const [cvc, setCvc] = useState("");
-  const [cvcError, setCvcError] = useState(false);
-
+export default function Form({
+  setComplete,
+  name,
+  setName,
+  nameError,
+  setNameError,
+  setNumber,
+  number,
+  numberError,
+  setNumberError,
+  setMonth,
+  month,
+  monthError,
+  setMonthError,
+  setYear,
+  year,
+  yearError,
+  setYearError,
+  setCvc,
+  cvc,
+  cvcError,
+  setCvcError,
+}) {
   const handleSubmit = () => {
+    let isValid = true;
     if (name.length === 0) {
       setNameError(true);
+      isValid = false;
     } else {
       setNameError(false);
     }
 
     if (number.length === 0 || /\D/.test(number)) {
       setNumberError(true);
+      isValid = false;
     } else {
       setNumberError(false);
     }
 
-    if (month.length === 0 || /\D/.test(month) || month > 12) {
+    if (month.length === 0 || /\D/.test(month) || month > 12 || month <= 0) {
       setMonthError(true);
+      isValid = false;
     } else {
       setMonthError(false);
     }
 
-    if (year.length === 0 || /\D/.test(year)) {
+    if (year.length === 0 || /\D/.test(year) || year <= 0) {
       setYearError(true);
+      isValid = false;
     } else {
       setYearError(false);
     }
 
     if (cvc.length === 0 || /\D/.test(cvc)) {
       setCvcError(true);
+      isValid = false;
     } else {
       setCvcError(false);
     }
-    console.log(name);
-    console.log(number);
-    console.log(month);
-    console.log(year);
-    console.log(cvc);
+
+    if (isValid) {
+      setComplete(true);
+    } else {
+      setComplete(false);
+    }
   };
 
   return (
