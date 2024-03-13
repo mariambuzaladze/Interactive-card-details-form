@@ -1,5 +1,5 @@
 .container {
-  background-color: #21092f;
+  background-image: url(/images/bg-main-mobile.png);
   box-shadow: 0 39px 60px 0 rgba(0, 0, 0, 0.14);
   display: flex;
   position: relative;
