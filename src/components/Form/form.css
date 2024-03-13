@@ -18,11 +18,18 @@
   font-weight: 500;
   color: #fff;
   margin-top: 8px;
+  cursor: pointer;
 }
 
 .inputs {
   display: flex;
   gap: 8px;
+}
+
+.error {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ff5050;
 }
 
 @media screen and (min-width: 900px) {
