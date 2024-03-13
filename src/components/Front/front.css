@@ -37,3 +37,32 @@
   letter-spacing: 1.29px;
   color: #fff;
 }
+
+@media screen and (min-width: 1440px) {
+  .front {
+    grid-row: 1;
+    align-self: center;
+    margin-left: 164px;
+    width: 447px;
+    height: 245px;
+    padding: 32px;
+  }
+
+  .card-logo {
+    width: 72px;
+  }
+
+  .front-text {
+    gap: 25.5px;
+  }
+
+  .card-number {
+    font-size: 28px;
+    letter-spacing: 3.42px;
+  }
+
+  .name-date {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}

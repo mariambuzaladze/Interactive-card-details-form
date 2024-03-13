@@ -1,6 +1,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
   padding: 91px 24px 0;
   background-color: #fff;
@@ -22,4 +23,15 @@
 .inputs {
   display: flex;
   gap: 8px;
+}
+
+@media screen and (min-width: 900px) {
+  .form {
+    padding: 127px;
+    gap: 24px;
+  }
+
+  .confirm {
+    margin-top: 16px;
+  }
 }

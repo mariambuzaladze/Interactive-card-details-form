@@ -4,3 +4,13 @@
   display: grid;
   padding: 16px;
 }
+
+@media screen and (min-width: 1440px) {
+  .container {
+    background-image: url(/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    grid-template-rows: auto;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+}

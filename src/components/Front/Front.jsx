@@ -1,5 +1,4 @@
 import "./front.css";
-import CardFront from "/images/bg-card-front.png";
 import Circle from "/images/card-logo.svg";
 
 export default function Front() {
