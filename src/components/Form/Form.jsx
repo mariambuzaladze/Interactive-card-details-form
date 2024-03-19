@@ -34,7 +34,7 @@ export default function Form({
       setNameError(false);
     }
 
-    if (number.length === 0 || /\D/.test(number)) {
+    if (number.length === 0 || /\D/.test(number) || number.length > 20) {
       setNumberError(true);
       isValid = false;
     } else {
@@ -48,14 +48,14 @@ export default function Form({
       setMonthError(false);
     }
 
-    if (year.length === 0 || /\D/.test(year) || year <= 0) {
+    if (year.length === 0 || /\D/.test(year) || year <= 0 || year.length > 4) {
       setYearError(true);
       isValid = false;
     } else {
       setYearError(false);
     }
 
-    if (cvc.length === 0 || /\D/.test(cvc)) {
+    if (cvc.length === 0 || /\D/.test(cvc) || cvc.length > 3) {
       setCvcError(true);
       isValid = false;
     } else {
@@ -87,7 +87,9 @@ export default function Form({
         value={number}
         onChange={(event) => setNumber(event.target.value.trim())}
       />
-      {numberError ? <p className="error">Wrong format, numbers only</p> : null}
+      {numberError ? (
+        <p className="error">Wrong format, numbers only and 20 digits</p>
+      ) : null}
 
       <div className="inputs">
         <div className="input-error">
@@ -112,7 +114,7 @@ export default function Form({
             onChange={(event) => setYear(event.target.value.trim())}
           />
           {yearError ? (
-            <p className="error">Can’t be blank, numbers only</p>
+            <p className="error">Can’t be blank, numbers only and 4 digits</p>
           ) : null}
         </div>
 
@@ -125,7 +127,7 @@ export default function Form({
             onChange={(event) => setCvc(event.target.value.trim())}
           />
           {cvcError ? (
-            <p className="error">Can’t be blank, numbers only</p>
+            <p className="error">Can’t be blank, numbers only and 3 digits</p>
           ) : null}
         </div>
       </div>
